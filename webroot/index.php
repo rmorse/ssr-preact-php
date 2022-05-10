@@ -6,15 +6,15 @@ $template_data = array(
 	'name' => 'Mary',
 	'favoriteColors' => array(
 		array(
-			'name' => 'Red',
+			'label' => 'Red',
 			'value' => 'red',
 		),
 		array(
-			'name' => 'Green',
+			'label' => 'Green',
 			'value' => 'green',
 		),
 		array(
-			'name' => 'Blue',
+			'label' => 'Blue',
 			'value' => 'blue',
 		),
 	),
