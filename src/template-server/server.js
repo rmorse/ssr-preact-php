@@ -68,7 +68,7 @@ const initServer = () => {
 					.map( ( el ) => el.toString() )
 					.join( '' );
 				writeFileAndDir(
-					`./php/templates/app.html`,
+					`./webroot/templates/app.html`,
 					innerHtml
 				);
 			})
