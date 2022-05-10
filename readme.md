@@ -29,9 +29,9 @@ Once the Preact application is loaded, the application will interactive.
 
 ## How it works
 
-Add a `templateVars` property to your component object to define which variables should be exposed to the template / Handlebars.
+Add a `templateVars` property [to your component object](https://github.com/rmorse/ssr-preact-php/blob/main/src/components/person/index.js#L26) to define which variables should be exposed to the template / Handlebars.
 
-[There is more information about how to use Babel JSX Template Vars transform here](https://github.com/rmorse/babel-plugin-jsx-template-vars#template-variable-types).
+[There is more information about how to use the Babel JSX Template Vars transform here](https://github.com/rmorse/babel-plugin-jsx-template-vars#template-variable-types).
 
 ## Limitations
 
