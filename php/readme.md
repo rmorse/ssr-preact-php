@@ -1,0 +1,1 @@
+The folder would usually live on your PHP ready server.
