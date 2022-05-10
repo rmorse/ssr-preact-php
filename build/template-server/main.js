@@ -1,57 +1,13 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/components/person/index.js":
 /*!****************************************!*\
   !*** ./src/components/person/index.js ***!
   \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.module.js");
-var _excluded = ["name", "favoriteColors", "showColors"];
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-/**
- * A Person component, for demo purposes.
- */
-
-/** @jsx h */
-
-/** @jsxFrag Fragment */
-
-var Person = function Person(_ref) {
-  var name = _ref.name,
-      favoriteColors = _ref.favoriteColors,
-      _ref$showColors = _ref.showColors,
-      showColors = _ref$showColors === void 0 ? true : _ref$showColors,
-      props = _objectWithoutProperties(_ref, _excluded);
-
-  var _uid3 = [{
-    value: "{{value}}",
-    label: "{{label}}"
-  }];
-  var _uid = '{{name}}';
-
-  var favoriteColorsList = _uid3.map(function (color, index) {
-    return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", {
-      key: index
-    }, color.label);
-  });
-
-  return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("section", {
-    "class": "profile"
-  }, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h1", null, _uid), "{{#favoriteColors}}", favoriteColorsList, "{{/favoriteColors}}");
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Person);
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nTypeError: D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\src\\components\\person\\index.js: Property right of AssignmentExpression expected node to be of a type [\"Expression\"] but instead got undefined\n    at Object.validate (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\@babel\\types\\lib\\definitions\\utils.js:131:11)\n    at validateField (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\@babel\\types\\lib\\validators\\validate.js:24:9)\n    at validate (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\@babel\\types\\lib\\validators\\validate.js:17:3)\n    at String.builder (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\@babel\\types\\lib\\builders\\builder.js:39:27)\n    at Object.assignmentExpression (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\@babel\\types\\lib\\builders\\generated\\index.js:265:27)\n    at buildAssignment (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\babel-plugin-jsx-template-props\\index.js:16:16)\n    at D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\babel-plugin-jsx-template-props\\index.js:174:29\n    at Array.forEach (<anonymous>)\n    at VariableDeclaration (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\babel-plugin-jsx-template-props\\index.js:157:23)\n    at NodePath._call (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\@babel\\traverse\\lib\\path\\context.js:53:20)");
 
 /***/ }),
 
@@ -61,6 +17,7 @@ var Person = function Person(_ref) {
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Component": () => (/* binding */ _),
@@ -109,6 +66,18 @@ var n,l,u,i,t,o,r,f,e={},c=[],s=/acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[c
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -139,14 +108,16 @@ var n,l,u,i,t,o,r,f,e={},c=[],s=/acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[c
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.module.js");
 /* harmony import */ var _components_person__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/person */ "./src/components/person/index.js");
+/* harmony import */ var _components_person__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_person__WEBPACK_IMPORTED_MODULE_1__);
 /**
  * The main entry point for your application.
  */
@@ -167,7 +138,7 @@ var App = function App() {
     label: 'Blue',
     value: 'blue'
   }];
-  return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(_components_person__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)((_components_person__WEBPACK_IMPORTED_MODULE_1___default()), {
     name: 'Mary',
     favoriteColors: favoriteColors
   }));
