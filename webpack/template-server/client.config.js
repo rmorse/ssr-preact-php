@@ -23,7 +23,7 @@ module.exports = ( env ) => {
           exclude: /node_modules/,
           loader: "babel-loader",
           options: {
-							plugins: [ 'babel-plugin-jsx-template-props' ],
+							plugins: [ 'babel-plugin-jsx-template-vars' ],
           }
         },
         {

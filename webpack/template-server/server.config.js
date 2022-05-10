@@ -29,9 +29,6 @@ module.exports = ( env ) => {
           use: {
             loader: "babel-loader"
           },
-          /* options: {
-							plugins: [ 'babel-plugin-jsx-template-props' ],
-          } */
         }
       ]
     },

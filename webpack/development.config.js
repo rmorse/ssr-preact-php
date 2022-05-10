@@ -22,7 +22,7 @@ module.exports = ( env ) => {
           loader: "babel-loader",
           options: {
 							plugins: [ 
-                [ 'babel-plugin-jsx-template-props', { tidyOnly: true } ]
+                [ 'babel-plugin-jsx-template-vars', { tidyOnly: true } ]
               ],
           }
         },
