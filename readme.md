@@ -27,20 +27,27 @@ Once the Preact application is loaded, the application will interactive.
 
 **You should not see a flicker when the JS has downloaded and the application has initialised. This means SSR was a success 💪**
 
+## How it works
+
+Add a `templateVars` property to your component object to define which variables should be exposed to the template / Handlebars.
+
+[There is more information about how to use Babel JSX Template Vars transform here](https://github.com/rmorse/babel-plugin-jsx-template-vars#template-variable-types).
+
 ## Limitations
 
 There are currently some __significant__ limitations with this approach.
 
 Most notably the generation of the handlebars template.  
 
-It is created using the alpha (still in development) version of **Babel JSX Template Vars** which only supports an extremely small subset of JSX syntax.
+It is created using the __still in development__ version of **Babel JSX Template Vars** which only supports an extremely small subset of JSX syntax.
 
-Read here on whats currently supported and can be successfully translated to handlebars syntax.
+[Read here on whats currently supported and can be successfully translated to handlebars syntax](https://github.com/rmorse/babel-plugin-jsx-template-vars#template-variable-types).
 
 ## Future goals
 
-Even running handlebars on the server is not particularly performant.  A future goal would be to compile this straight to PHP (so the logic in the templates is directly handled by the server) and then all we would need to do is a simple token replacement for replacement variables.
+Even running handlebars on the server is not particularly performant.
 
+A future goal would be to compile this straight to PHP (so the logic in the templates is directly handled by the server) and then all we would need to do is a simple token replacement for replacement variables.
 
 
 
