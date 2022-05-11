@@ -62,11 +62,7 @@ const initServer = () => {
 				const html = res.data;
 				// Parse and get the `body` element children.
 				const innerHtml = parse( html )
-					.querySelectorAll(
-						'body > *'
-					)
-					.map( ( el ) => el.toString() )
-					.join( '' );
+					.querySelector( 'body' ).innerHTML
 				writeFileAndDir(
 					`./webroot/templates/app.html`,
 					innerHtml
