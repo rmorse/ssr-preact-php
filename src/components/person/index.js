@@ -6,7 +6,7 @@ import { h, Fragment } from 'preact';
 /** @jsx h */
 /** @jsxFrag Fragment */
 
-const Person = ( { name, favoriteColors, showColors = true, ...props } ) => {
+const Person = ( { name, dob, favoriteColors, favoriteArtists, traits, showColors = true, showArtists = true, ...props } ) => {
 	const favoriteColorsList = favoriteColors.map( ( color, index ) => {
 		return (
 			<div key={ index }>
@@ -17,16 +17,42 @@ const Person = ( { name, favoriteColors, showColors = true, ...props } ) => {
 	return (
 		<section class="profile">
 			<h1>{ name }</h1>
+			<p>Date of birth: { dob }</p>
 			{ /* showColors && favoriteColorsList */ }
-			{ favoriteColorsList }
+			{ showColors && (
+				<>
+					<h2>Favorite Colors</h2>
+					<div>{ favoriteColorsList }</div>
+				</>
+			) }
+			{ showArtists && (
+				<>
+					<h2>Favorite Artists</h2>
+					<div>
+						{ favoriteArtists.map( ( artist, index ) => {
+							return (
+								<div key={ index }>
+									{ artist.name } | { artist.genre }
+								</div>
+							)
+						} ) }
+					</div>
+				</>
+			) }
+			<h2>Character traits</h2>
+			{ traits }
 		</section>
 	);
 }
 
 Person.templateVars = [
 	'name',
+	'dob',
 	[ 'showColors', { type: 'control' } ],
-	[ 'favoriteColors', { type: 'list', /* aliases: [ 'favoriteColorsList' ], */ child: { type: 'object', props: [ 'value', 'label' ] } } ],
+	[ 'showArtists', { type: 'control' } ],
+	[ 'favoriteColors', { type: 'list', child: { type: 'object', props: [ 'value', 'label' ] } } ],
+	[ 'favoriteArtists', { type: 'list', child: { type: 'object', props: [ 'name', 'genre' ] } } ],
+	[ 'traits', { type: 'list' } ],
 ];
 
 export default Person;

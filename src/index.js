@@ -9,10 +9,12 @@ import Person from './components/person';
 
 const App = () => {
 	const favoriteColors = [ { label: 'Red', value: 'red' }, { label: 'Green', value: 'green' }, { label: 'Blue', value: 'blue' } ];
-
+	const favoriteArtists = [ { name: 'Joy Division', genre: 'Alternative/Indie' }, { name: 'Robert Palmer', genre: 'Pop' } ];
+	const traits = [ 'Loves to dance', 'Loves to sing', 'Loves to eat' ];
+	
 	return (
 		<>
-			<Person name={ 'Mary' } favoriteColors={ favoriteColors } />
+			<Person dob={ '1/1/1985' } name={ 'Mary' } favoriteColors={ favoriteColors } favoriteArtists={ favoriteArtists } traits={ traits } />
 		</>
 	)
 }
