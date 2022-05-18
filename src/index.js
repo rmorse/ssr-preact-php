@@ -8,9 +8,10 @@ import Person from './components/person';
 
 
 const App = () => {
+	// These props really should be coming via a store / external data source that can be mirrored on the server.
 	const favoriteColors = [ { label: 'Red', value: 'red' }, { label: 'Green', value: 'green' }, { label: 'Blue', value: 'blue' } ];
 	const favoriteArtists = [ { name: 'Joy Division', genre: 'Alternative/Indie' }, { name: 'Robert Palmer', genre: 'Pop' } ];
-	const traits = [ 'Loves to dance', 'Loves to sing', 'Loves to eat' ];
+	const traits = [ 'Friendly', 'Charming', 'Snarky' ];
 	
 	return (
 		<>

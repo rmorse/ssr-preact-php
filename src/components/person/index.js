@@ -40,6 +40,12 @@ const Person = ( { name, dob, favoriteColors, favoriteArtists, traits, showColor
 				</>
 			) }
 			<h2>Character traits</h2>
+			{ traits.map( ( trait, index ) => {
+				return (
+					<div>A trait: { trait }</div>
+				);
+			} ) }
+			<h2>Character traits raw</h2>
 			{ traits }
 		</section>
 	);

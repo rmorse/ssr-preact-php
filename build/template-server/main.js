@@ -1,13 +1,75 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/components/person/index.js":
 /*!****************************************!*\
   !*** ./src/components/person/index.js ***!
   \****************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nTypeError: D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\src\\components\\person\\index.js: Cannot destructure property 'type' of 'varConfig.child' as it is undefined.\n    at buildListVarDeclaration (D:\\xampp\\htdocs\\bitbucket\\babel-plugin-jsx-template-vars\\index.js:141:10)\n    at D:\\xampp\\htdocs\\bitbucket\\babel-plugin-jsx-template-vars\\index.js:262:39\n    at Array.forEach (<anonymous>)\n    at BlockStatement (D:\\xampp\\htdocs\\bitbucket\\babel-plugin-jsx-template-vars\\index.js:258:15)\n    at NodePath._call (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\@babel\\traverse\\lib\\path\\context.js:53:20)\n    at NodePath.call (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\@babel\\traverse\\lib\\path\\context.js:40:17)\n    at NodePath.visit (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\@babel\\traverse\\lib\\path\\context.js:100:31)\n    at TraversalContext.visitQueue (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\@babel\\traverse\\lib\\context.js:103:16)\n    at TraversalContext.visitSingle (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\@babel\\traverse\\lib\\context.js:77:19)\n    at TraversalContext.visit (D:\\xampp\\htdocs\\bitbucket\\ssr-preact-php\\node_modules\\@babel\\traverse\\lib\\context.js:131:19)");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.module.js");
+var _excluded = ["name", "dob", "favoriteColors", "favoriteArtists", "traits", "showColors", "showArtists"];
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+/**
+ * A Person component, for demo purposes.
+ */
+
+/** @jsx h */
+
+/** @jsxFrag Fragment */
+
+var Person = function Person(_ref) {
+  var name = _ref.name,
+      dob = _ref.dob,
+      favoriteColors = _ref.favoriteColors,
+      favoriteArtists = _ref.favoriteArtists,
+      traits = _ref.traits,
+      _ref$showColors = _ref.showColors,
+      showColors = _ref$showColors === void 0 ? true : _ref$showColors,
+      _ref$showArtists = _ref.showArtists,
+      showArtists = _ref$showArtists === void 0 ? true : _ref$showArtists,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  var _uid7 = ["{{.}}"];
+  var _uid6 = [{
+    name: "{{name}}",
+    genre: "{{genre}}"
+  }];
+  var _uid5 = [{
+    value: "{{value}}",
+    label: "{{label}}"
+  }];
+  var _uid2 = '{{dob}}';
+
+  var _uid = '{{name}}';
+
+  var favoriteColorsList = _uid5.map(function (color, index) {
+    return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", {
+      key: index
+    }, color.label);
+  });
+
+  return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("section", {
+    "class": "profile"
+  }, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h1", null, _uid), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("p", null, "Date of birth: ", _uid2), "{{#if_truthy showColors}}", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Favorite Colors"), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "{{#favoriteColors}}", favoriteColorsList, "{{/favoriteColors}}")), "{{/if_truthy}}", "{{#if_truthy showArtists}}", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Favorite Artists"), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "{{#favoriteArtists}}", _uid6.map(function (artist, index) {
+    return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", {
+      key: index
+    }, artist.name, " | ", artist.genre);
+  }), "{{/favoriteArtists}}")), "{{/if_truthy}}", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Character traits"), "{{#traits}}", _uid7.map(function (trait, index) {
+    return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "A trait: ", trait);
+  }), "{{/traits}}", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Character traits raw"), "{{#traits}}", _uid7, "{{/traits}}");
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Person);
 
 /***/ }),
 
@@ -17,7 +79,6 @@ throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Component": () => (/* binding */ _),
@@ -66,18 +127,6 @@ var n,l,u,i,t,o,r,f,e={},c=[],s=/acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[c
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -108,16 +157,14 @@ var n,l,u,i,t,o,r,f,e={},c=[],s=/acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[c
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.module.js");
 /* harmony import */ var _components_person__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/person */ "./src/components/person/index.js");
-/* harmony import */ var _components_person__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_person__WEBPACK_IMPORTED_MODULE_1__);
 /**
  * The main entry point for your application.
  */
@@ -128,6 +175,7 @@ __webpack_require__.r(__webpack_exports__);
 /** @jsxFrag Fragment */
 
 var App = function App() {
+  // These props really should be coming via a store / external data source that can be mirrored on the server.
   var favoriteColors = [{
     label: 'Red',
     value: 'red'
@@ -145,8 +193,8 @@ var App = function App() {
     name: 'Robert Palmer',
     genre: 'Pop'
   }];
-  var traits = ['Loves to dance', 'Loves to sing', 'Loves to eat'];
-  return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)((_components_person__WEBPACK_IMPORTED_MODULE_1___default()), {
+  var traits = ['Friendly', 'Charming', 'Snarky'];
+  return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(_components_person__WEBPACK_IMPORTED_MODULE_1__["default"], {
     dob: '1/1/1985',
     name: 'Mary',
     favoriteColors: favoriteColors,
