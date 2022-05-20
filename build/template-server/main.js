@@ -39,20 +39,22 @@ var Person = function Person(_ref) {
       showArtists = _ref$showArtists === void 0 ? true : _ref$showArtists,
       props = _objectWithoutProperties(_ref, _excluded);
 
-  var _uid7 = ["{{.}}"];
+  var _uid8 = ["<?php echo htmlspecialchars( $item, ENT_QUOTES ); ?>"];
+  var _uid7 = [{
+    name: "<?php echo htmlspecialchars( $item[ \"name\" ], ENT_QUOTES ); ?>",
+    genre: "<?php echo htmlspecialchars( $item[ \"genre\" ], ENT_QUOTES ); ?>"
+  }];
   var _uid6 = [{
-    name: "{{name}}",
-    genre: "{{genre}}"
+    value: "<?php echo htmlspecialchars( $item[ \"value\" ], ENT_QUOTES ); ?>",
+    label: "<?php echo htmlspecialchars( $item[ \"label\" ], ENT_QUOTES ); ?>"
   }];
-  var _uid5 = [{
-    value: "{{value}}",
-    label: "{{label}}"
-  }];
-  var _uid2 = '{{dob}}';
+  var _uid2 = '<?php echo htmlspecialchars( $data[ "dob" ], ENT_QUOTES ); ?>';
 
-  var _uid = '{{name}}';
+  var _uid = '<?php echo htmlspecialchars( $data[ "name" ], ENT_QUOTES ); ?>';
 
-  var favoriteColorsList = _uid5.map(function (color, index) {
+  var showTest = 'yes';
+
+  var favoriteColorsList = _uid6.map(function (color, index) {
     return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", {
       key: index
     }, color.label);
@@ -60,13 +62,13 @@ var Person = function Person(_ref) {
 
   return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("section", {
     "class": "profile"
-  }, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h1", null, _uid), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("p", null, "Date of birth: ", _uid2), "{{#if_truthy showColors}}", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Favorite Colors"), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "{{#favoriteColors}}", favoriteColorsList, "{{/favoriteColors}}")), "{{/if_truthy}}", "{{#if_truthy showArtists}}", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Favorite Artists"), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "{{#favoriteArtists}}", _uid6.map(function (artist, index) {
+  }, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h1", null, _uid), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("p", null, "Date of birth: ", _uid2), "<?php if ( $data[ \"showColors\" ] ) { ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Favorite Colors"), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "<?php foreach ( $data[ \"favoriteColors\" ] as $item ) { ?>", favoriteColorsList, "<?php } ?>")), "<?php } ?>", "<?php if ( $data[ \"showArtists\" ] ) { ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Favorite Artists"), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "<?php foreach ( $data[ \"favoriteArtists\" ] as $item ) { ?>", _uid7.map(function (artist, index) {
     return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", {
       key: index
     }, artist.name, " | ", artist.genre);
-  }), "{{/favoriteArtists}}")), "{{/if_truthy}}", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Character traits"), "{{#traits}}", _uid7.map(function (trait, index) {
+  }), "<?php } ?>")), "<?php } ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Character traits"), "<?php foreach ( $data[ \"traits\" ] as $item ) { ?>", _uid8.map(function (trait, index) {
     return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "A trait: ", trait);
-  }), "{{/traits}}", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Character traits raw"), "{{#traits}}", _uid7, "{{/traits}}");
+  }), "<?php } ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Character traits raw"), "<?php foreach ( $data[ \"traits\" ] as $item ) { ?>", _uid8, "<?php } ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Combining control + replace variables"), "<?php if ( $data[ \"showTest\" ] === \"yes\" ) { ?>", _uid, "<?php } ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Combining control + list variables"), "<?php if ( $data[ \"showTest\" ] === \"yes\" ) { ?>", "<?php foreach ( $data[ \"traits\" ] as $item ) { ?>", _uid8, "<?php } ?>", "<?php } ?>");
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Person);

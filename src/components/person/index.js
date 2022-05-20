@@ -7,6 +7,7 @@ import { h, Fragment } from 'preact';
 /** @jsxFrag Fragment */
 
 const Person = ( { name, dob, favoriteColors, favoriteArtists, traits, showColors = true, showArtists = true, ...props } ) => {
+	const showTest = 'yes';
 	const favoriteColorsList = favoriteColors.map( ( color, index ) => {
 		return (
 			<div key={ index }>
@@ -18,7 +19,6 @@ const Person = ( { name, dob, favoriteColors, favoriteArtists, traits, showColor
 		<section class="profile">
 			<h1>{ name }</h1>
 			<p>Date of birth: { dob }</p>
-			{ /* showColors && favoriteColorsList */ }
 			{ showColors && (
 				<>
 					<h2>Favorite Colors</h2>
@@ -47,6 +47,10 @@ const Person = ( { name, dob, favoriteColors, favoriteArtists, traits, showColor
 			} ) }
 			<h2>Character traits raw</h2>
 			{ traits }
+			<h2>Combining control + replace variables</h2> 
+			{ showTest === 'yes' && name }
+			<h2>Combining control + list variables</h2> 
+			{ showTest === 'yes' && traits }
 		</section>
 	);
 }
@@ -59,6 +63,7 @@ Person.templateVars = [
 	[ 'favoriteColors', { type: 'list', child: { type: 'object', props: [ 'value', 'label' ] } } ],
 	[ 'favoriteArtists', { type: 'list', child: { type: 'object', props: [ 'name', 'genre' ] } } ],
 	[ 'traits', { type: 'list' } ],
+	[ 'showTest', { type: 'control' } ],
 ];
 
 export default Person;
