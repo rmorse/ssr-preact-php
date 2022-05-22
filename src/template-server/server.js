@@ -53,7 +53,8 @@ const initServer = () => {
 	const expressServer = app.listen(PORT, () => {
 		console.log(`App listening to ${PORT}....`);
 		// Trigger a request with query string to the server so that the prerender service can do its magic.
-	
+		
+		
 		const url = `http://localhost:8080/?_escaped_fragment_='`;
 		console.log(`Triggering request to route.`);
 		axios.get(url)
@@ -62,10 +63,15 @@ const initServer = () => {
 				const html = res.data;
 				// Parse and get the `body` element children.
 				const innerHtml = parse( html )
-					.querySelector( 'body' ).innerHTML
+					.querySelector( 'body' ).innerHTML;
+				
+				// Now we need to unencode our PHP tags: `&lt;?php` > `<?php`
+				// and `?&gt;` to `?>`
+				const unencodedPHP = innerHtml.replace( /&lt;\?php/g, '<?php' ).replace( /\?&gt;/g, '?>' );
+		
 				writeFileAndDir(
-					`./webroot/templates/app.html`,
-					innerHtml
+					`./webroot/templates/app.php`,
+					unencodedPHP
 				);
 			})
 			.catch(error => {

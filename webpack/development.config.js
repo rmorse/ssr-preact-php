@@ -9,7 +9,7 @@ module.exports = ( env ) => {
       app: './src/index.js'
     },
     output: {
-      path: path.join(cwd, './root/assets/'),
+      path: path.join(cwd, './webroot/assets/'),
       publicPath: '/',
       filename: '[name].js'
     },

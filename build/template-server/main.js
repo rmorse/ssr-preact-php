@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.module.js");
-var _excluded = ["name", "favoriteColors", "showColors"];
+var _excluded = ["name", "dob", "favoriteColors", "favoriteArtists", "traits", "showColors", "showArtists"];
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
@@ -29,18 +29,32 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 var Person = function Person(_ref) {
   var name = _ref.name,
+      dob = _ref.dob,
       favoriteColors = _ref.favoriteColors,
+      favoriteArtists = _ref.favoriteArtists,
+      traits = _ref.traits,
       _ref$showColors = _ref.showColors,
       showColors = _ref$showColors === void 0 ? true : _ref$showColors,
+      _ref$showArtists = _ref.showArtists,
+      showArtists = _ref$showArtists === void 0 ? true : _ref$showArtists,
       props = _objectWithoutProperties(_ref, _excluded);
 
-  var _uid3 = [{
-    value: "{{value}}",
-    label: "{{label}}"
+  var _uid8 = ["<?php echo htmlspecialchars( $item, ENT_QUOTES ); ?>"];
+  var _uid7 = [{
+    name: "<?php echo htmlspecialchars( $item[ \"name\" ], ENT_QUOTES ); ?>",
+    genre: "<?php echo htmlspecialchars( $item[ \"genre\" ], ENT_QUOTES ); ?>"
   }];
-  var _uid = '{{name}}';
+  var _uid6 = [{
+    value: "<?php echo htmlspecialchars( $item[ \"value\" ], ENT_QUOTES ); ?>",
+    label: "<?php echo htmlspecialchars( $item[ \"label\" ], ENT_QUOTES ); ?>"
+  }];
+  var _uid2 = '<?php echo htmlspecialchars( $data[ "dob" ], ENT_QUOTES ); ?>';
 
-  var favoriteColorsList = _uid3.map(function (color, index) {
+  var _uid = '<?php echo htmlspecialchars( $data[ "name" ], ENT_QUOTES ); ?>';
+
+  var showTest = 'yes';
+
+  var favoriteColorsList = _uid6.map(function (color, index) {
     return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", {
       key: index
     }, color.label);
@@ -48,7 +62,13 @@ var Person = function Person(_ref) {
 
   return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("section", {
     "class": "profile"
-  }, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h1", null, _uid), "{{#favoriteColors}}", favoriteColorsList, "{{/favoriteColors}}");
+  }, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h1", null, _uid), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("p", null, "Date of birth: ", _uid2), "<?php if ( $data[ \"showColors\" ] ) { ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Favorite Colors"), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "<?php foreach ( $data[ \"favoriteColors\" ] as $item ) { ?>", favoriteColorsList, "<?php } ?>")), "<?php } ?>", "<?php if ( $data[ \"showArtists\" ] ) { ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Favorite Artists"), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "<?php foreach ( $data[ \"favoriteArtists\" ] as $item ) { ?>", _uid7.map(function (artist, index) {
+    return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", {
+      key: index
+    }, artist.name, " | ", artist.genre);
+  }), "<?php } ?>")), "<?php } ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Character traits"), "<?php foreach ( $data[ \"traits\" ] as $item ) { ?>", _uid8.map(function (trait, index) {
+    return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "A trait: ", trait);
+  }), "<?php } ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Character traits raw"), "<?php foreach ( $data[ \"traits\" ] as $item ) { ?>", _uid8, "<?php } ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Combining control + replace variables"), "<?php if ( $data[ \"showTest\" ] === \"yes\" ) { ?>", _uid, "<?php } ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Combining control + list variables"), "<?php if ( $data[ \"showTest\" ] === \"yes\" ) { ?>", "<?php foreach ( $data[ \"traits\" ] as $item ) { ?>", _uid8, "<?php } ?>", "<?php } ?>");
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Person);
@@ -157,6 +177,7 @@ __webpack_require__.r(__webpack_exports__);
 /** @jsxFrag Fragment */
 
 var App = function App() {
+  // These props really should be coming via a store / external data source that can be mirrored on the server.
   var favoriteColors = [{
     label: 'Red',
     value: 'red'
@@ -167,9 +188,20 @@ var App = function App() {
     label: 'Blue',
     value: 'blue'
   }];
+  var favoriteArtists = [{
+    name: 'Joy Division',
+    genre: 'Alternative/Indie'
+  }, {
+    name: 'Robert Palmer',
+    genre: 'Pop'
+  }];
+  var traits = ['Friendly', 'Charming', 'Snarky'];
   return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(_components_person__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    dob: '1/1/1985',
     name: 'Mary',
-    favoriteColors: favoriteColors
+    favoriteColors: favoriteColors,
+    favoriteArtists: favoriteArtists,
+    traits: traits
   }));
 };
 
