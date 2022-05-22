@@ -1,9 +1,9 @@
 <?php
-require_once dirname(__FILE__) . '/vendor/load-handlebars.php';
-require_once dirname(__FILE__) . '/class-helpers.php';
-
-$template_data = array(
+$data = array(
 	'name' => 'Mary',
+	'showColors'=> true,
+	'showArtists'=> true,
+	'dob' => '1/1/1985',
 	'favoriteColors' => array(
 		array(
 			'label' => 'Red',
@@ -15,24 +15,25 @@ $template_data = array(
 		),
 		array(
 			'label' => 'Blue',
-			'value' => 'blue',
 		),
 	),
+	'favoriteArtists' => array(
+		array(
+			'name' => 'Joy Division',
+			'genre' => 'Alternative/Indie',
+		),
+		array(
+			'name' => 'Robert Palmer',
+			'genre' => 'Pop',
+		),
+	),
+	'traits' => array( 
+		'Friendly',
+		'Charming',
+		'Snarky',
+	),
+	'showTest' => 'yes',
 );
-
-$partials_dir    = 'templates';
-$partials_loader = new Handlebars\Loader\FilesystemLoader( $partials_dir, array( 'extension' => 'html' ) );
-
-// Init handlebars.
-$handlebars = new Handlebars\Handlebars(
-	array(
-		'loader'          => $partials_loader,
-		'partials_loader' => $partials_loader,
-	)
-);
-
-$helpers = new Helpers();
-$helpers->register( $handlebars );
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +44,7 @@ $helpers->register( $handlebars );
 </head>
 <body>
 <?php
-	echo $handlebars->render( 'app', $template_data );
+	include dirname(__FILE__) . '/templates/app.php';
 ?>
 </body>
 </html>
