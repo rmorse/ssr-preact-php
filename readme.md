@@ -2,7 +2,7 @@
 
 This is a demo project showcasing how to achieve limited SSR with Preact and PHP.
 
-You could swap Preact for React, and PHP for other languages that don't support rending JavaScript on the server.
+You could swap Preact for React.
 
 ## Setup
 
