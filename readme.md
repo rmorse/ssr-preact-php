@@ -1,8 +1,10 @@
 # Server Side Rendering with Preact + PHP
 
-This is a demo project showcasing how to achieve limited SSR with Preact and PHP.
+This is a demo project showcasing how to achieve limited SSR with Preact and PHP, without extensions.
 
 You could swap Preact for React.
+
+If you want to use other server side languages, you could [output to handlebars](https://github.com/rmorse/ssr-preact-php-handlebars) instead, or [add your own language in the JSX Template Vars plugin](https://github.com/rmorse/babel-plugin-jsx-template-vars/wiki/Custom-languages).
 
 ## Setup
 
@@ -20,16 +22,16 @@ Once you have copied the contents of `webroot` to your PHP server, access the UR
 If you **view source** of the webpage, you will see that application html is generated on the server:
 
 ```html
-<section class="profile"><h1>Mary</h1><div>Red</div><div>Green</div><div>Blue</div></section>
+<section class="profile"><h1>Mary</h1>...</section>
 ```
 
-Once the Preact application is loaded, the application will interactive.
+Once the Preact application is loaded, the application will be interactive.
 
 **You should not see a flicker when the JS has downloaded and the application has initialised. This means SSR was a success 💪**
 
 ## How it works
 
-Add a `templateVars` property [to your component object](https://github.com/rmorse/ssr-preact-php/blob/main/src/components/person/index.js#L26) to define which variables should be exposed to the PHP template.
+Add a `templateVars` property [to your component object](https://github.com/rmorse/ssr-preact-php/blob/main/src/components/person/index.js#L58) to define which variables should be exposed to the PHP template.
 
 [There is more information about how to use the Babel JSX Template Vars transform here](https://github.com/rmorse/babel-plugin-jsx-template-vars#template-variable-types).
 
