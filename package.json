@@ -18,7 +18,7 @@
     "@babel/preset-react": "^7.16.7",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.2.4",
-    "babel-plugin-jsx-template-vars": "0.0.5",
+    "babel-plugin-jsx-template-vars": "file:../babel-plugin-jsx-template-vars",
     "file-loader": "^6.2.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
