@@ -2,6 +2,54 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/components/color/index.js":
+/*!***************************************!*\
+  !*** ./src/components/color/index.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! file:///D:/xampp/htdocs/bitbucket/ssr-preact-php/node_modules/babel-plugin-jsx-template-vars/language/index.js */ "./node_modules/babel-plugin-jsx-template-vars/language/index.js");
+/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.module.js");
+
+
+/**
+ * A Color component, for demo purposes.
+ */
+
+/** @jsx h */
+
+/** @jsxFrag Fragment */
+
+var Color = function Color(_ref) {
+  var color = _ref.color,
+      _ref$placeholder = _ref.placeholder,
+      _uid2 = _ref$placeholder === void 0 ? '' : _ref$placeholder,
+      __context__ = _ref.__context__;
+
+  var _uid4 = typeof __context__ === 'number' ? __context__ : 0;
+
+  var _uid3 = [(0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)('primitive', null, _uid4)];
+
+  var _uid2 = (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageReplace)('format', 'placeholder', _uid4);
+
+  var _uid = (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageReplace)('format', 'label', _uid4);
+
+  var _uid = color.label,
+      value = color.value,
+      connotations = color.connotations;
+  return (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h3", null, _uid), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h4", null, "Connotations"), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("ul", null, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", "connotations", _uid4), _uid3.map(function (connotation, index) {
+    return (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("li", null, connotation);
+  }), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", "connotations", _uid4))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Color);
+
+/***/ }),
+
 /***/ "./src/components/person/index.js":
 /*!****************************************!*\
   !*** ./src/components/person/index.js ***!
@@ -12,24 +60,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.module.js");
+/* harmony import */ var file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! file:///D:/xampp/htdocs/bitbucket/ssr-preact-php/node_modules/babel-plugin-jsx-template-vars/language/index.js */ "./node_modules/babel-plugin-jsx-template-vars/language/index.js");
+/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.module.js");
+/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../color */ "./src/components/color/index.js");
 var _excluded = ["name", "dob", "favoriteColors", "favoriteArtists", "traits", "showColors", "showArtists"];
 
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
+
+
 /**
  * A Person component, for demo purposes.
  */
+
 
 /** @jsx h */
 
 /** @jsxFrag Fragment */
 
 var Person = function Person(_ref) {
-  var name = _ref.name,
-      dob = _ref.dob,
+  var _uid = _ref.name,
+      _uid2 = _ref.dob,
       favoriteColors = _ref.favoriteColors,
       favoriteArtists = _ref.favoriteArtists,
       traits = _ref.traits,
@@ -37,41 +90,130 @@ var Person = function Person(_ref) {
       showColors = _ref$showColors === void 0 ? true : _ref$showColors,
       _ref$showArtists = _ref.showArtists,
       showArtists = _ref$showArtists === void 0 ? true : _ref$showArtists,
-      props = _objectWithoutProperties(_ref, _excluded);
+      props = _objectWithoutProperties(_ref, _excluded),
+      __context__ = _ref.__context__;
 
-  var _uid8 = ["<?php echo htmlspecialchars( $item, ENT_QUOTES ); ?>"];
+  var _uid9 = typeof __context__ === 'number' ? __context__ : 0;
+
+  var _uid8 = [(0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)('primitive', null, _uid9)];
+
   var _uid7 = [{
-    name: "<?php echo htmlspecialchars( $item[ 'name' ], ENT_QUOTES ); ?>",
-    genre: "<?php echo htmlspecialchars( $item[ 'genre' ], ENT_QUOTES ); ?>"
+    name: (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("ojectProperty", "name", _uid9),
+    genre: (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("ojectProperty", "genre", _uid9)
   }];
   var _uid6 = [{
-    value: "<?php echo htmlspecialchars( $item[ 'value' ], ENT_QUOTES ); ?>",
-    label: "<?php echo htmlspecialchars( $item[ 'label' ], ENT_QUOTES ); ?>"
+    value: (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("ojectProperty", "value", _uid9),
+    label: (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("ojectProperty", "label", _uid9)
   }];
-  var _uid2 = "<?php echo htmlspecialchars( $data[ 'dob' ], ENT_QUOTES ); ?>";
 
-  var _uid = "<?php echo htmlspecialchars( $data[ 'name' ], ENT_QUOTES ); ?>";
+  var _uid2 = (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageReplace)('format', 'dob', _uid9);
+
+  var _uid = (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageReplace)('format', 'name', _uid9);
 
   var showTest = 'yes';
 
   var favoriteColorsList = _uid6.map(function (color, index) {
-    return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", {
-      key: index
-    }, color.label);
+    return (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)(_color__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      color: color,
+      key: index,
+      __context__: _uid9 + 1
+    });
   });
 
-  return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("section", {
+  return (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("section", {
     "class": "profile"
-  }, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h1", null, _uid), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("p", null, "Date of birth: ", _uid2), "<?php if ( $data[ 'showColors' ] ) { ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Favorite Colors"), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "<?php foreach ( $data[ 'favoriteColors' ] as $item ) { ?>", favoriteColorsList, "<?php } ?>")), "<?php } ?>", "<?php if ( $data[ 'showArtists' ] ) { ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Favorite Artists"), (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "<?php foreach ( $data[ 'favoriteArtists' ] as $item ) { ?>", _uid7.map(function (artist, index) {
-    return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", {
+  }, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h1", null, _uid), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("p", null, "Date of birth: ", _uid2), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifTruthy", "open"], ["showColors"], _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)(preact__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Favorite Colors"), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", "favoriteColors", _uid9), favoriteColorsList, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", "favoriteColors", _uid9))), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifTruthy", "close"], ["showColors"], _uid9), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifTruthy", "open"], ["showArtists"], _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)(preact__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Favorite Artists"), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", "favoriteArtists", _uid9), _uid7.map(function (artist, index) {
+    return (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", {
       key: index
     }, artist.name, " | ", artist.genre);
-  }), "<?php } ?>")), "<?php } ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Character traits"), "<?php foreach ( $data[ 'traits' ] as $item ) { ?>", _uid8.map(function (trait, index) {
-    return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("div", null, "A trait: ", trait);
-  }), "<?php } ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Character traits raw"), "<?php foreach ( $data[ 'traits' ] as $item ) { ?>", _uid8, "<?php } ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Combining control + replace variables"), "<?php if ( $data[ 'showTest' ] === 'yes' ) { ?>", _uid, "<?php } ?>", (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)("h2", null, "Combining control + list variables"), "<?php if ( $data[ 'showTest' ] === 'yes' ) { ?>", "<?php foreach ( $data[ 'traits' ] as $item ) { ?>", _uid8, "<?php } ?>", "<?php } ?>");
+  }), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", "favoriteArtists", _uid9))), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifTruthy", "close"], ["showArtists"], _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Character traits"), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", "traits", _uid9), _uid8.map(function (trait, index) {
+    return (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, "A trait: ", trait);
+  }), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", "traits", _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Character traits raw"), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", "traits", _uid9), _uid8, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", "traits", _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Combining control + replace variables"), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifEqual", "open"], ["showTest", "'yes'"], _uid9), _uid, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifEqual", "close"], ["showTest", "'yes'"], _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Combining control + list variables"), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifEqual", "open"], ["showTest", "'yes'"], _uid9), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", "traits", _uid9), _uid8, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", "traits", _uid9), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifEqual", "close"], ["showTest", "'yes'"], _uid9));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Person);
+
+/***/ }),
+
+/***/ "./node_modules/babel-plugin-jsx-template-vars/language/index.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/babel-plugin-jsx-template-vars/language/index.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createLanguageString": () => (/* binding */ createLanguageString),
+/* harmony export */   "getLanguageControl": () => (/* binding */ getLanguageControl),
+/* harmony export */   "getLanguageList": () => (/* binding */ getLanguageList),
+/* harmony export */   "getLanguageReplace": () => (/* binding */ getLanguageReplace),
+/* harmony export */   "getLanguageString": () => (/* binding */ getLanguageString)
+/* harmony export */ });
+// Specify languages to translate to here
+// For now we can categories as replace, list and control
+// But we should look at another structure in the future.
+
+// The main language object the currently used language is stored in
+// const language = ...;
+// Which will be injected above here by the template vars plugin.
+
+/**
+ * Replaces tokens such as ||%1|| and ||%2|| with the arguments passed in.
+ *
+ * Note: index starts at 1, not 0.
+ *
+ * @param {String} string The soruce string
+ * @param {Array} argsArray The arguments to replace
+ * @returns {String} The string with the arguments replaced
+ */
+function createLanguageString( string, argsArray, context ) {
+	let str = string.replace( /\|\|\%(\d+)\|\|/g, ( match, key ) => {
+		const matchIndex = parseInt( match.replace( /\D/g, '' ) );
+		return argsArray[ matchIndex -1 ];
+	} );
+
+	// Now replace the var with the context
+	str = str.replace( /\|\|\%(var)\|\|/g, ( match, key ) => {
+		if ( context === 0 ) {
+			return `data`;
+		}
+		return `data_${ context }`;
+	} );
+
+	return str.replace( /\|\|\%(subVar)\|\|/g, ( match, key ) => {
+		return `data_${ context + 1 }`;
+	} );
+}
+
+/**
+ * @param {String} type The variable type (replace, list, control)
+ * @param {Array} targetString And array of paths/properties to target the desired string.
+ * @param {Array} argsArray The arguments to replace
+ * @returns {String} The string with the arguments replaced
+ */
+ function getLanguageString( type, targetString = [], argsArray = [], context ) {
+	let languageWithPath = window.templateVarsLanguage[ type ];
+	targetString.forEach( ( targetString, index ) => {
+		if ( languageWithPath[ targetString ] ) {
+			languageWithPath = languageWithPath[ targetString ];
+		}
+	} );
+
+	return createLanguageString( languageWithPath, argsArray, context );
+}
+
+function getLanguageReplace( target, arg, context ) {
+	return getLanguageString( 'replace', [ target ], [ arg ], context );
+}
+
+function getLanguageList( target, arg, context ) {
+	return getLanguageString( 'list', [ target ], [ arg ], context );
+}
+
+function getLanguageControl( targets, args, context ) {
+	return getLanguageString( 'control', targets, args, context );
+}
+
 
 /***/ }),
 
@@ -165,8 +307,41 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.module.js");
-/* harmony import */ var _components_person__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/person */ "./src/components/person/index.js");
+/* harmony import */ var file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! file:///D:/xampp/htdocs/bitbucket/ssr-preact-php/node_modules/babel-plugin-jsx-template-vars/language/index.js */ "./node_modules/babel-plugin-jsx-template-vars/language/index.js");
+/* harmony import */ var preact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! preact */ "./node_modules/preact/dist/preact.module.js");
+/* harmony import */ var _components_person__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/person */ "./src/components/person/index.js");
+
+window.templateVarsLanguage = {
+  "name": "php",
+  "replace": {
+    "format": "<?php echo htmlspecialchars( $||%var||[ '||%1||' ], ENT_QUOTES ); ?>"
+  },
+  "list": {
+    "open": "<?php foreach ( $||%var||[ '||%1||' ] as $||%subVar|| ) { ?>",
+    "close": "<?php } ?>",
+    "ojectProperty": "<?php echo htmlspecialchars( $||%subVar||[ '||%1||' ], ENT_QUOTES ); ?>",
+    "primitive": "<?php echo htmlspecialchars( $||%subVar||, ENT_QUOTES ); ?>"
+  },
+  "control": {
+    "ifTruthy": {
+      "open": "<?php if ( $||%var||[ '||%1||' ] ) { ?>",
+      "close": "<?php } ?>"
+    },
+    "ifFalsy": {
+      "open": "<?php if ( ! $||%var||[ '||%1||' ] ) { ?>",
+      "close": "<?php } ?>"
+    },
+    "ifEqual": {
+      "open": "<?php if ( $||%var||[ '||%1||' ] === ||%2|| ) { ?>",
+      "close": "<?php } ?>"
+    },
+    "ifNotEqual": {
+      "open": "<?php if ( $||%var||[ '||%1||' ] !== ||%2|| ) { ?>",
+      "close": "<?php } ?>"
+    }
+  }
+};
+
 /**
  * The main entry point for your application.
  */
@@ -176,17 +351,26 @@ __webpack_require__.r(__webpack_exports__);
 
 /** @jsxFrag Fragment */
 
-var App = function App() {
+var App = function App(_ref) {
+  var __context__ = _ref.__context__;
+
+  var _uid2 = typeof __context__ === 'number' ? __context__ : 0;
+
+  var _uid = [(0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)('primitive', null, _uid2)];
+
   // These props really should be coming via a store / external data source that can be mirrored on the server.
   var favoriteColors = [{
     label: 'Red',
-    value: 'red'
+    value: 'red',
+    connotations: ['danger', 'life', 'war']
   }, {
     label: 'Green',
-    value: 'green'
+    value: 'green',
+    connotations: ['growth', 'health', 'nature']
   }, {
     label: 'Blue',
-    value: 'blue'
+    value: 'blue',
+    connotations: ['peace', 'calm', 'serenity']
   }];
   var favoriteArtists = [{
     name: 'Joy Division',
@@ -196,17 +380,18 @@ var App = function App() {
     genre: 'Pop'
   }];
   var traits = ['Friendly', 'Charming', 'Snarky'];
-  return (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(preact__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(_components_person__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)(preact__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)(_components_person__WEBPACK_IMPORTED_MODULE_2__["default"], {
     dob: '1/1/1985',
     name: 'Mary',
     favoriteColors: favoriteColors,
     favoriteArtists: favoriteArtists,
-    traits: traits
+    traits: traits,
+    __context__: _uid2
   }));
 };
 
 var init = function init() {
-  (0,preact__WEBPACK_IMPORTED_MODULE_0__.render)((0,preact__WEBPACK_IMPORTED_MODULE_0__.h)(App, null), document.body);
+  (0,preact__WEBPACK_IMPORTED_MODULE_1__.render)((0,preact__WEBPACK_IMPORTED_MODULE_1__.h)(App, null), document.body);
 };
 
 if (document.readyState !== 'loading') {

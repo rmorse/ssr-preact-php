@@ -8,13 +8,22 @@ $data = array(
 		array(
 			'label' => 'Red',
 			'value' => 'red',
+			'connotations' => array(
+				'danger', 'life', 'war'
+			)
 		),
 		array(
 			'label' => 'Green',
 			'value' => 'green',
+			'connotations' => array(
+				'growth', 'health', 'nature'
+			)
 		),
 		array(
 			'label' => 'Blue',
+			'connotations' => array(
+				'peace', 'calm', 'serenity'
+			)
 		),
 	),
 	'favoriteArtists' => array(
@@ -39,7 +48,7 @@ $data = array(
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Preact pre-render to handlebars</title>
+    <title>Preact pre-render to PHP</title>
     <script defer src="/assets/app.js"></script>
 </head>
 <body>

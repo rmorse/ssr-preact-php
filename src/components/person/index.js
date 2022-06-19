@@ -3,6 +3,7 @@
  * A Person component, for demo purposes.
  */
 import { h, Fragment } from 'preact';
+import Color from '../color';
 /** @jsx h */
 /** @jsxFrag Fragment */
 
@@ -10,9 +11,7 @@ const Person = ( { name, dob, favoriteColors, favoriteArtists, traits, showColor
 	const showTest = 'yes';
 	const favoriteColorsList = favoriteColors.map( ( color, index ) => {
 		return (
-			<div key={ index }>
-				{ color.label }
-			</div>
+			<Color color={ color } key={ index } />
 		);
 	} );
 	return (
