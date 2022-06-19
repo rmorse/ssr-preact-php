@@ -3,7 +3,6 @@ const webpack = require('webpack')
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 const cwd = process.cwd();
 
-
 // Generates the app with with the babel-template-vars plugin enabled.
 module.exports = ( env ) => {
   return {
