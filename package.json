@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "axios": "^0.26.1",
-    "babel-plugin-jsx-template-vars": "0.0.8",
+    "babel-plugin-jsx-template-vars": "0.0.9",
     "express": "^4.17.3",
     "morgan": "^1.10.0",
     "node-html-parser": "^5.3.3",

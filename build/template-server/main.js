@@ -34,16 +34,26 @@ var Color = function Color(_ref) {
 
   var _uid3 = [(0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)('primitive', null, _uid4)];
 
-  var _uid2 = (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageReplace)('format', 'placeholder', _uid4);
+  var _uid2 = (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageReplace)('format', {
+    value: 'placeholder'
+  }, _uid4);
 
-  var _uid = (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageReplace)('format', 'label', _uid4);
+  var _uid = (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageReplace)('format', {
+    value: 'label'
+  }, _uid4);
 
   var _uid = color.label,
       value = color.value,
       connotations = color.connotations;
-  return (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h3", null, _uid), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h4", null, "Connotations"), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("ul", null, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", "connotations", _uid4), _uid3.map(function (connotation, index) {
+  return (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h3", null, _uid), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h4", null, "Connotations"), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("ul", null, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", {
+    type: "identifier",
+    value: "connotations"
+  }, _uid4), _uid3.map(function (connotation, index) {
     return (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("li", null, connotation);
-  }), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", "connotations", _uid4))));
+  }), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", {
+    type: "identifier",
+    value: "connotations"
+  }, _uid4))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Color);
@@ -98,17 +108,33 @@ var Person = function Person(_ref) {
   var _uid8 = [(0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)('primitive', null, _uid9)];
 
   var _uid7 = [{
-    name: (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("ojectProperty", "name", _uid9),
-    genre: (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("ojectProperty", "genre", _uid9)
+    name: (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("objectProperty", {
+      type: "identifier",
+      value: "name"
+    }, _uid9),
+    genre: (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("objectProperty", {
+      type: "identifier",
+      value: "genre"
+    }, _uid9)
   }];
   var _uid6 = [{
-    value: (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("ojectProperty", "value", _uid9),
-    label: (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("ojectProperty", "label", _uid9)
+    value: (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("objectProperty", {
+      type: "identifier",
+      value: "value"
+    }, _uid9),
+    label: (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("objectProperty", {
+      type: "identifier",
+      value: "label"
+    }, _uid9)
   }];
 
-  var _uid2 = (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageReplace)('format', 'dob', _uid9);
+  var _uid2 = (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageReplace)('format', {
+    value: 'dob'
+  }, _uid9);
 
-  var _uid = (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageReplace)('format', 'name', _uid9);
+  var _uid = (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageReplace)('format', {
+    value: 'name'
+  }, _uid9);
 
   var showTest = 'yes';
 
@@ -122,13 +148,79 @@ var Person = function Person(_ref) {
 
   return (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("section", {
     "class": "profile"
-  }, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h1", null, _uid), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("p", null, "Date of birth: ", _uid2), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifTruthy", "open"], ["showColors"], _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)(preact__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Favorite Colors"), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", "favoriteColors", _uid9), favoriteColorsList, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", "favoriteColors", _uid9))), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifTruthy", "close"], ["showColors"], _uid9), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifTruthy", "open"], ["showArtists"], _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)(preact__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Favorite Artists"), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", "favoriteArtists", _uid9), _uid7.map(function (artist, index) {
+  }, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h1", null, _uid), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("p", null, "Date of birth: ", _uid2), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifTruthy", "open"], [{
+    type: "identifier",
+    value: "showColors"
+  }], _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)(preact__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Favorite Colors"), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", {
+    type: "identifier",
+    value: "favoriteColors"
+  }, _uid9), favoriteColorsList, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", {
+    type: "identifier",
+    value: "favoriteColors"
+  }, _uid9))), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifTruthy", "close"], [{
+    type: "identifier",
+    value: "showColors"
+  }], _uid9), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifTruthy", "open"], [{
+    type: "identifier",
+    value: "showArtists"
+  }], _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)(preact__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Favorite Artists"), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", {
+    type: "identifier",
+    value: "favoriteArtists"
+  }, _uid9), _uid7.map(function (artist, index) {
     return (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", {
       key: index
     }, artist.name, " | ", artist.genre);
-  }), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", "favoriteArtists", _uid9))), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifTruthy", "close"], ["showArtists"], _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Character traits"), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", "traits", _uid9), _uid8.map(function (trait, index) {
+  }), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", {
+    type: "identifier",
+    value: "favoriteArtists"
+  }, _uid9))), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifTruthy", "close"], [{
+    type: "identifier",
+    value: "showArtists"
+  }], _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Character traits"), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", {
+    type: "identifier",
+    value: "traits"
+  }, _uid9), _uid8.map(function (trait, index) {
     return (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("div", null, "A trait: ", trait);
-  }), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", "traits", _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Character traits raw"), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", "traits", _uid9), _uid8, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", "traits", _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Combining control + replace variables"), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifEqual", "open"], ["showTest", "'yes'"], _uid9), _uid, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifEqual", "close"], ["showTest", "'yes'"], _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Combining control + list variables"), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifEqual", "open"], ["showTest", "'yes'"], _uid9), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", "traits", _uid9), _uid8, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", "traits", _uid9), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifEqual", "close"], ["showTest", "'yes'"], _uid9));
+  }), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", {
+    type: "identifier",
+    value: "traits"
+  }, _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Character traits raw"), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", {
+    type: "identifier",
+    value: "traits"
+  }, _uid9), _uid8, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", {
+    type: "identifier",
+    value: "traits"
+  }, _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Combining control + replace variables"), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifEqual", "open"], [{
+    type: "identifier",
+    value: "showTest"
+  }, {
+    type: "value",
+    value: "'yes'"
+  }], _uid9), _uid, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifEqual", "close"], [{
+    type: "identifier",
+    value: "showTest"
+  }, {
+    type: "value",
+    value: "'yes'"
+  }], _uid9), (0,preact__WEBPACK_IMPORTED_MODULE_1__.h)("h2", null, "Combining control + list variables"), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifEqual", "open"], [{
+    type: "identifier",
+    value: "showTest"
+  }, {
+    type: "value",
+    value: "'yes'"
+  }], _uid9), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("open", {
+    type: "identifier",
+    value: "traits"
+  }, _uid9), _uid8, (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageList)("close", {
+    type: "identifier",
+    value: "traits"
+  }, _uid9), (0,file_D_xampp_htdocs_bitbucket_ssr_preact_php_node_modules_babel_plugin_jsx_template_vars_language_index_js__WEBPACK_IMPORTED_MODULE_0__.getLanguageControl)(["ifEqual", "close"], [{
+    type: "identifier",
+    value: "showTest"
+  }, {
+    type: "value",
+    value: "'yes'"
+  }], _uid9));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Person);
@@ -158,6 +250,23 @@ __webpack_require__.r(__webpack_exports__);
 // Which will be injected above here by the template vars plugin.
 
 /**
+ * Detering if a arg is an identifier or string, by checking the first
+ * and last character to see if they are single quotes.
+ */
+function isArgString( arg ) {
+	return arg.charAt(0) === "'" && arg.charAt(arg.length - 1) === "'";
+}
+/**
+ * Generates the variable string from the language with the correct context.
+ *
+ * @param {*} arg 
+ * @param {*} context 
+ * @returns 
+ */
+function getVariableString( arg, context ) {
+	return getLanguageString( 'variable', [], [], context ).replace( "||%v||", arg );
+}
+/**
  * Replaces tokens such as ||%1|| and ||%2|| with the arguments passed in.
  *
  * Note: index starts at 1, not 0.
@@ -166,52 +275,73 @@ __webpack_require__.r(__webpack_exports__);
  * @param {Array} argsArray The arguments to replace
  * @returns {String} The string with the arguments replaced
  */
-function createLanguageString( string, argsArray, context ) {
-	let str = string.replace( /\|\|\%(\d+)\|\|/g, ( match, key ) => {
-		const matchIndex = parseInt( match.replace( /\D/g, '' ) );
-		return argsArray[ matchIndex -1 ];
-	} );
 
-	// Now replace the var with the context
-	str = str.replace( /\|\|\%(var)\|\|/g, ( match, key ) => {
-		if ( context === 0 ) {
-			return `data`;
+function createLanguageString( string, argsArray, context, tags = {} ) {
+	// look for `[%...]
+	let str = string.replace( /\[\%(.+?)\]/g, ( match, key ) => {
+		const tagName = match.replace( /\[|\]|\%/g, '' );
+
+		// Built in tags
+		if ( tagName === '_context_' ) {
+			return context === 0 ? 'data' : `data_${ context }`;
+		} else if ( tagName === '_subcontext_' ) {
+			return `data_${ context + 1 }`;
+		} else if ( tagName === '_variable_' ) {
+			const returnArg = argsArray.shift();
+			return returnArg.value;
 		}
-		return `data_${ context }`;
+
+		// Now lets get custom language tags.
+		const variableNames = [
+			'variable',
+			'subvariable',
+		]
+
+		if ( tags[ tagName ] ) {
+			// Instead of getting the language string, return the actual string or value.
+			if ( variableNames.includes( tagName ) ) {
+				// Instead of getting the language string, return the value.
+				if ( argsArray[0].type === 'value' ) {
+					const arg = argsArray.shift();
+					return arg.value;
+				}
+			}
+			return createLanguageString( tags[ tagName ], argsArray, context, tags );
+		}
+		
+		return '';
 	} );
 
-	return str.replace( /\|\|\%(subVar)\|\|/g, ( match, key ) => {
-		return `data_${ context + 1 }`;
-	} );
+	return str;
 }
 
 /**
  * @param {String} type The variable type (replace, list, control)
- * @param {Array} targetString And array of paths/properties to target the desired string.
+ * @param {Array} targetPath And array of paths/properties to target the desired string.
  * @param {Array} argsArray The arguments to replace
  * @returns {String} The string with the arguments replaced
  */
- function getLanguageString( type, targetString = [], argsArray = [], context ) {
-	let languageWithPath = window.templateVarsLanguage[ type ];
-	targetString.forEach( ( targetString, index ) => {
-		if ( languageWithPath[ targetString ] ) {
-			languageWithPath = languageWithPath[ targetString ];
+ function getLanguageString( targetPath = [], argsArray = [], context ) {
+	let languagePart = window.templateVarsLanguage;
+	targetPath.forEach( ( target, index ) => {
+		if ( languagePart[ target ] ) {
+			languagePart = languagePart[ target ];
 		}
 	} );
 
-	return createLanguageString( languageWithPath, argsArray, context );
+	return createLanguageString( languagePart, [ ...argsArray ], context, window.templateVarsLanguage['variables'] );
 }
 
 function getLanguageReplace( target, arg, context ) {
-	return getLanguageString( 'replace', [ target ], [ arg ], context );
+	return getLanguageString( [ 'replace', target ], [ arg ], context );
 }
 
 function getLanguageList( target, arg, context ) {
-	return getLanguageString( 'list', [ target ], [ arg ], context );
+	return getLanguageString( [ 'list', target ], [ arg ], context );
 }
 
 function getLanguageControl( targets, args, context ) {
-	return getLanguageString( 'control', targets, args, context );
+	return getLanguageString( [ 'control', ...targets ], args, context );
 }
 
 
@@ -313,30 +443,40 @@ __webpack_require__.r(__webpack_exports__);
 
 window.templateVarsLanguage = {
   "name": "php",
+  "variables": {
+    "context": "$[%_context_]",
+    "subcontext": "$[%_subcontext_]",
+    "variable": "$[%_context_]['[%_variable_]']",
+    "subvariable": "$[%_subcontext_]['[%_variable_]']"
+  },
   "replace": {
-    "format": "<?php echo htmlspecialchars( $||%var||[ '||%1||' ], ENT_QUOTES ); ?>"
+    "format": "<?php echo htmlspecialchars( [%variable], ENT_QUOTES ); ?>"
   },
   "list": {
-    "open": "<?php foreach ( $||%var||[ '||%1||' ] as $||%subVar|| ) { ?>",
+    "open": "<?php foreach ( [%variable] as [%subcontext] ) { ?>",
     "close": "<?php } ?>",
-    "ojectProperty": "<?php echo htmlspecialchars( $||%subVar||[ '||%1||' ], ENT_QUOTES ); ?>",
-    "primitive": "<?php echo htmlspecialchars( $||%subVar||, ENT_QUOTES ); ?>"
+    "objectProperty": "<?php echo htmlspecialchars( [%subvariable], ENT_QUOTES ); ?>",
+    "primitive": "<?php echo htmlspecialchars( [%subcontext], ENT_QUOTES ); ?>"
   },
   "control": {
     "ifTruthy": {
-      "open": "<?php if ( $||%var||[ '||%1||' ] ) { ?>",
+      "open": "<?php if ( [%variable] ) { ?>",
       "close": "<?php } ?>"
     },
     "ifFalsy": {
-      "open": "<?php if ( ! $||%var||[ '||%1||' ] ) { ?>",
+      "open": "<?php if ( ! [%variable] ) { ?>",
       "close": "<?php } ?>"
     },
     "ifEqual": {
-      "open": "<?php if ( $||%var||[ '||%1||' ] === ||%2|| ) { ?>",
+      "open": "<?php if ( [%variable] === [%variable] ) { ?>",
       "close": "<?php } ?>"
     },
     "ifNotEqual": {
-      "open": "<?php if ( $||%var||[ '||%1||' ] !== ||%2|| ) { ?>",
+      "open": "<?php if ( [%variable] !== [%variable] ) { ?>",
+      "close": "<?php } ?>"
+    },
+    "else": {
+      "open": "<?php else { ?>",
       "close": "<?php } ?>"
     }
   }
